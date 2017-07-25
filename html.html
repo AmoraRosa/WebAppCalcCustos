@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Controle de Custos</title>
+		<script src="logica.js"></script>
+	</head>
+	<body>
+		<form action="" method="post" name="adicionarFun" id="adicionarFun">
+			<label for="nome">Nome:</label><br>
+			<input type="text" name="nome" id="name" required><br>
+			<label for="salario">Salário:</label><br>
+			<input type="number" name="salario" id="salario" required><br>
+			<label for="dataDeAdmissao">Data de admissão:</label><br>
+			<input type="date" name="dataDeAdmissao" id="dataDeAdmissao"><br><br>
+			<input type="button" value="Adicionar funcionário" onClick="addfun(this.nome)">
+		</form>
+		<br>
+		<form action="" method="post" name="gerarRel">
+			<input type="button" value="Gerar relatório" onClick="gerarRelatorio()">
+		</form>
+		
+	</body>
+</html>
